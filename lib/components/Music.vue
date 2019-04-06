@@ -1,11 +1,11 @@
 <template>
     <div v-if="enable" class="main-div" style="background-color: unset;margin-top: unset;margin-bottom: unset;padding-top: 10px;padding-bottom: 10px;">
-      <APlayer :mini="mini" :float="true" :listFolded="true" :autoplay="autoplay" :list= musicList :music="music"/>
+      <APlayer :mini="mini" :float="true" :listFolded="false" :autoplay="autoplay" :list= musicList :music="music"/>
     </div>
 </template>
 
 <script>
-import APlayer from 'vue-aplayer'
+import APlayer from './APlayer/vue-aplayer'
 export default {
   name: 'Music',
   components: {

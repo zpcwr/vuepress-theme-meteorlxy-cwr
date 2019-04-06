@@ -104,9 +104,6 @@ export default {
     navs () {
       return this.$themeConfig.nav
     },
-    musicEnable () {
-      return this.$themeConfig.aPlayer.enable
-    }
   },
 
   mounted () {
