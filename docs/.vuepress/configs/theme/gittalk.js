@@ -3,6 +3,6 @@ const comments = {
     repo: 'blog',
     clientId: 'b935965af3954e21200e',
     clientSecret: '4c3f87ca75cf8efc54924585c6a4d8d55a7c3962',
-    autoCreateIssue: process.env.NODE_ENV !== 'development',
+    autoCreateIssue: false,
 }
 module.exports = comments
