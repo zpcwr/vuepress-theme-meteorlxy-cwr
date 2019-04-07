@@ -1,10 +1,10 @@
 <template>
   <div class="search-input">
     <label>
-      <Icon
-        name="search"
-        :title="$themeConfig.lang.search"
-      />
+<!--      <Icon-->
+<!--        name="search"-->
+<!--        :title="$themeConfig.lang.search"-->
+<!--      />-->
 
       <input
         type="text"
@@ -52,7 +52,7 @@ export default {
   margin 0 0.2rem
   input
     outline none
-    width 20rem
+    width 100%
     max-width calc(100% - 1.5em)
     height 2rem
     font-size 0.9rem

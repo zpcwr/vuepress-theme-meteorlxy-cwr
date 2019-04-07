@@ -5,7 +5,7 @@
       class="filter-categories"
     >
       <h3>
-        <RouterLink to="/posts/categories/">
+        <RouterLink :to="$withBase('/posts/categories/')">
           {{ $themeConfig.lang.categories }}
         </RouterLink>
       </h3>
@@ -18,7 +18,7 @@
       class="filter-tags"
     >
       <h3>
-        <RouterLink to="/posts/tags/">
+        <RouterLink :to="$withBase('/posts/tags/')">
           {{ $themeConfig.lang.tags }}
         </RouterLink>
       </h3>
