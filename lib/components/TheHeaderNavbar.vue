@@ -37,7 +37,7 @@
             <RouterLink
               v-if="!isExternal(nav.link)"
               :key="nav.text"
-              :to="nav.link"
+              :to="isPosts(nav.link) ? $withBase(nav.link) : nav.link"
               class="navbar-link"
               :exact="nav.exact || false"
               @click.native="showNavLinks = false"
@@ -115,6 +115,9 @@ export default {
   methods: {
     isExternal (link) {
       return /^(https?:|mailto:|tel:)/.test(link)
+    },
+    isPosts (link) {
+      return link === '/posts/' || link === '/'
     },
     showNavbarHolderMore () {
       this.navbarHolderMore = !this.navbarHolderMore

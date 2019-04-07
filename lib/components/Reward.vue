@@ -4,8 +4,8 @@
         <a class="reward-btn" @click="showPayImg">赏</a>
         <div v-show="payImg" @click="showPayImg" class="reward-img-content">
           <div>
-            <img class="reward-img" src="/assets/img/alipay.png"/>
-            <img  class="reward-img" src="/assets/img/wechatpay.png"/>
+            <img class="reward-img" :src="$withBase('/assets/img/alipay.png')"/>
+            <img  class="reward-img" :src="$withBase('/assets/img/wechatpay.png')"/>
           </div>
         </div>
       </div>

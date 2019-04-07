@@ -5,10 +5,13 @@ module.exports = {
   base: '/blog/',
 
   description: '点滴记录,加油...',
-
+  head: [
+    // 配置网站的 ico 图标
+    ['link', { rel: 'icon', href: '/assets/favicon.ico' }]
+  ],
   locales: {
     '/': {
-      lang: 'en-US',
+      lang: 'zh-CN',
     },
   },
 

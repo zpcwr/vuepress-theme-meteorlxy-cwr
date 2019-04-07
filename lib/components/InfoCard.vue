@@ -80,7 +80,7 @@
             style="cursor: pointer"
             @click="toggleImg(name)"
           >
-            <img :id="'info' + name" :src="item.img" class="sns-img" style="display: none;"/>
+            <img :id="'info' + name" :src="$withBase(item.img)" class="sns-img" style="display: none;"/>
             <IconSns
               :name="name"
               :account="item.account"
@@ -143,7 +143,7 @@ export default {
     },
 
     avatar () {
-      return this.info.avatar || '/assets/img/avatar_unknown.jpg'
+      return this.$withBase(this.info.avatar || '/assets/img/avatar_unknown.jpg')
     },
 
     sns () {

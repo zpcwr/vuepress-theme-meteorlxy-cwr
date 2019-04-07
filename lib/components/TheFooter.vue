@@ -22,7 +22,7 @@
           style="cursor: pointer"
           @click="toggleImg(name)"
         >
-          <img :id="name" :src="item.img" class="sns-img" style="display: none;"/>
+          <img :id="name" :src="$withBase(item.img)" class="sns-img" style="display: none;"/>
           <IconSns
             :name="name"
             :account="item.account"

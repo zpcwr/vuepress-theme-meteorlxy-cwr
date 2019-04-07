@@ -9,7 +9,7 @@ header-image:
   - /assets/img/header-image-02.jpg
   - /assets/img/header-image-03.jpg
 header-title: false
-vssue-id: 10
+vssue-id: 12
 ---
 
 Detailed guide for header config
