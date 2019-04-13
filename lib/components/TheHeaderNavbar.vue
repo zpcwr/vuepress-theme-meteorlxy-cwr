@@ -149,7 +149,7 @@ $lineHeight = $navbarHeight - ($gutter * 2)
   color $textColor
   background-color alpha($navbarColor, 0.8)
   transition all 0.5s ease-out
-  overflow hidden
+  /*overflow hidden*/
   &.fixed
     position fixed
     background-color $navbarColor
